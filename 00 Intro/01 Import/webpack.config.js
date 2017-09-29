@@ -1,15 +1,17 @@
 module.exports = {
-  entry: ['./students.js'],
+  entry: ['./students.ts'],
   output: {
     filename: 'bundle.js',
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.ts$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-      },
+        loader: [
+          'babel-loader',
+          'awesome-typescript-loader',
+        ]},
     ],
   },
 };
