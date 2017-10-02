@@ -3,7 +3,7 @@ export function getAvg(scores) {
 }
 
 function getTotalScore(scores) {
-  return scores.reduce((totalScore, currentScore) => {
+  return scores.reduce((totalScore, currdentScore) => {
     return totalScore + currentScore;
 	console.log("hola");
   });
