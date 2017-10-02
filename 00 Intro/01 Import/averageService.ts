@@ -1,8 +1,8 @@
-export function getAvg(scores) {
+export function getAvg(scores:number[]):number {
  return getTotalScore(scores) / scores.length;
 }
 
-function getTotalScore(scores) {
+function getTotalScore(scores:number[]):number {
   return scores.reduce((totalScore, currentScore) => {
     return totalScore + currentScore;
   });
