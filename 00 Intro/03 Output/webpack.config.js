@@ -4,17 +4,24 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var basePath = __dirname;
 
 module.exports = {
-  entry: ['./students.js'],
+  entry: ['./students.ts'],
   output: {
     path: path.join(basePath, 'dist'),
     filename: 'bundle.js',
   },
+  resolve: {
+        extensions: ['.js', '.ts'],
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.ts$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: 
+        [
+          'babel-loader',
+          'awesome-typescript-loader',
+        ]
       },
     ],
   },
