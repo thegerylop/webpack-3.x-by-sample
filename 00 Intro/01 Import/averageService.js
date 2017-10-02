@@ -5,6 +5,6 @@ export function getAvg(scores) {
 function getTotalScore(scores) {
   return scores.reduce((totalScore, currentdScore) => {
     return totalScore + currentScore;
-	console.log("hola");
+	console.log("holas");
   });
 }
