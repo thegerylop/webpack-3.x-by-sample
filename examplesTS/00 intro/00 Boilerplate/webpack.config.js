@@ -8,9 +8,8 @@ module.exports = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        loader: ['babel-loader',
-                 'awesome-typescript-loader',
-        ]},
+        loader:'awesome-typescript-loader',
+        },
     ],
   },
 };
